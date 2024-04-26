@@ -1,22 +1,4 @@
-			    PW Data Science                        
-	
-| TOPIC |
-|-------|
-|[1. Python](#1-python)|
-|[2. Flask](#2-flask)|
-|[3. Statistics](#3-statistics)|
-|[4. Machine learning](#4-machine-learning)|
-|[5. Deep learning](#5-deep-learning)|
-|[6. Computer vision](#6-computer-vision)|
-|[7. Natural language processing](#7-natural-language-processing)|
-|[8. Big Data-Hadoop](#8-big-data-hadoop)|
-|[9. Apache Spark](#9-apache-spark)|
-|[10. Apache Kafka](#10-apache-kafka)|
-|[11. Tableau](#11-tableau)|
-|[12. PowerBI](#12-powerbi)|
-|[13. Resume Preparation](#13-resume-preparation)|
-|[14. Real Time Data Science Projects](#14-real-time-data-science-projects)|
-
+								 Data Science Master                       
 
 # List of Topics
 

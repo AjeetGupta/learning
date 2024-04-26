@@ -1,6 +1,6 @@
-## Mastering Generative AI with OpenAI, LangChain, and LlamaIndex
+                      Mastering Generative AI with OpenAI, LangChain, and LlamaIndex
 
-# Module 1 : Introduction to Generative AI
+## 1. Introduction to Generative AI
     1. What is generative AI ?
 
     2. Why are generative models required?
@@ -15,7 +15,7 @@
 
     7. Key applications of generative models
 
-# Module 2 : Text Preprocessing and Word Embedding
+# 2. Text Preprocessing and Word Embedding
 
     1. Segmentation and Tokenization
 
@@ -47,7 +47,7 @@
 
     15. Bert-based encoding
 
-# Module 3 : Introduction to Large Language Models
+# 3. Introduction to Large Language Models
 
     1. In-depth intuition of Transformer-Attention all your need Paper
 
@@ -81,7 +81,7 @@
 
     16. Introduction to Chatgpt- 4
 
-# Module 4 : Introduction to Huggingface And its Applications
+# 4. Introduction to Huggingface And its Applications
 
     1. Why the need for a hugging face?
 
@@ -103,7 +103,7 @@
 
     10. Language Translation with Hugging Face Transformer
 
-# Module 5 : Generative AI with LLMs and LLM Powered Applications
+# 5. Generative AI with LLMs and LLM Powered Applications
 
     1. Project: Text summarization with hugging face
 
@@ -113,7 +113,7 @@
 
     4. Project: Text to speech generation with LLM with hugging face
 
-# Module 6 : Guide to Open AI and its Ready to Use Models with Application
+# 6. Guide to Open AI and its Ready to Use Models with Application
 
     1. Introduction to OpenAI
 
@@ -157,7 +157,7 @@
 
     21. Project: Image generation with DALL-E
 
-# Module 7 : Prompt Engineering Mastering with OpenAI
+# 7. Prompt Engineering Mastering with OpenAI
 
     1. Introduction to Prompt Engineering
 
@@ -201,7 +201,7 @@
 
     21. More Prompts & Finding Prompt Inspirations
 
-# Module 8 : Vector database with Python for LLM Use Cases
+# 8. Vector database with Python for LLM Use Cases
 
     1. Introduction to vector database
 
@@ -233,7 +233,7 @@
 
     15. Pinecone Vector Database
 
-# Module 9 : Hands-on with LangChain
+# 9. Hands-on with LangChain
 
     1. Introduction to langchain
 
@@ -267,7 +267,7 @@
 
     16. Embeddings and Vector Data Stores in LangChain
 
-# Module 10 : Hands on with LangChain
+# 10. Hands on with LangChain
 
     1. Understanding PromptTemplate + LLM + OutputParser
 
@@ -317,7 +317,7 @@
 
     24. Project: Custom Chatbot for any website
 
-# Module 11 : Practical Guide to LlamaIndex with LLMs
+# 11. Practical Guide to LlamaIndex with LLMs
 
     1. Introduction to LlamaIndex
 
@@ -377,7 +377,7 @@
 
     29. Project: Chat with Books and PDF Files with Llama 2
 
-# Module 12 : End to End Projects
+# 12. End to End Projects
 
     1. Project#1: Medical Chatbot Project with Llama 2, Pinecone, LangChain & Deployment AWS
 
@@ -387,7 +387,7 @@
 
     4. Project#4: Medical Chatbot Project with Llama
 
-# Module 13 : Bonus:Additional Productive Tools to Explore
+# 13. Bonus:Additional Productive Tools to Explore
 
     1. Chainlit ( async Python framework)
 

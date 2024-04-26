@@ -1,24 +1,24 @@
 ## MLOPS : Production Ready Data Science projects
 
-# Module 1 : US Visa Approval Prediction
+# 1. US Visa Approval Prediction
 
-    1. Introduction
+    01. Introduction
 
-    2. Project Introduction
+    02. Project Introduction
 
-    3. GitHub Repository Setup
+    03. GitHub Repository Setup
 
-    4. Project Template Creation
+    04. Project Template Creation
 
-    5. Requirements Installation & Project Setup
+    05. Requirements Installation & Project Setup
 
-    6. Logging, Exception & Utils Modules
+    06. Logging, Exception & Utils Modules
 
-    7. Project Workflows
+    07. Project Workflows
 
-    8. MongoDB setup
+    08. MongoDB setup
 
-    9. Data Ingestion Component
+    09. Data Ingestion Component
 
     10. Data validation Component
 
@@ -35,25 +35,25 @@
     16. Dockerization & AWS CICD Deployment
 
 
-# Module 2 : Chest Disease Classification from Chest CT Scan Image
+# 2. Chest Disease Classification from Chest CT Scan Image
 
-    1. Introduction
+    01. Introduction
 
-    2. Project Demo
+    02. Project Demo
 
-    3. MLflow Demo
+    03. MLflow Demo
 
-    4. GitHub Repository Setup
+    04. GitHub Repository Setup
 
-    5. Project Template Creation
+    05. Project Template Creation
 
-    6. Requirements Installation & Project Setup
+    06. Requirements Installation & Project Setup
 
-    7. Logging, Exception & Utils Modules
+    07. Logging, Exception & Utils Modules
 
-    8. Project Workflows
+    08. Project Workflows
 
-    9. Data Ingestion Component
+    09. Data Ingestion Component
 
     10. Prepare Base Model Component
 
@@ -68,25 +68,25 @@
     15. Dockerization & AWS Jenkins CICD Deployment
 
 
-# Module 3 : Industry Safety Detection
+# 3. Industry Safety Detection
 
-    1. Introduction
+    01. Introduction
 
-    2. Project Demo
+    02. Project Demo
 
-    3. GitHub Repository Setup
+    03. GitHub Repository Setup
 
-    4. Project Template Creation
+    04. Project Template Creation
 
-    5. Requirements Installation & Project Setup
+    05. Requirements Installation & Project Setup
 
-    6. Data Annotation
+    06. Data Annotation
 
-    7. Notebook Experiment
+    07. Notebook Experiment
 
-    8. Logging, Exception & Utils Modules
+    08. Logging, Exception & Utils Modules
 
-    9. Project Workflows
+    09. Project Workflows
 
     10. Data Ingestion Component
 
@@ -98,25 +98,25 @@
 
     15. Dockerization AWS GitHub Action CICD Deployment
 
-# Module 4 : Name Entity Recognition
+# 4. Name Entity Recognition
 
-    1. Introduction
+    01. Introduction
 
-    2. Project Introduction
+    02. Project Introduction
 
-    3. What is Text Summarization (Online Demo)?
+    03. What is Text Summarization (Online Demo)?
 
-    4. GitHub Repository Setup
+    04. GitHub Repository Setup
 
-    5. Project Template Creation
+    05. Project Template Creation
 
-    6. Requirements Installation & Project Setup
+    06. Requirements Installation & Project Setup
 
-    7. Logging, Exception & Utils Modules
+    07. Logging, Exception & Utils Modules
 
-    8. Entire Project Notebook Experiment
+    08. Entire Project Notebook Experiment
 
-    9. Project Workflows
+    09. Project Workflows
 
     10. Data Ingestion Notebook Experiment
 
@@ -143,21 +143,21 @@
     21. Dockerization & Azure Circle CI CICD Deployment
 
 
-# Module 5 : Multilinguistic AI Assistant
+# 5. Multilinguistic AI Assistant
 
-    1. Introduction
+    01. Introduction
 
-    2. Project Demo
+    02. Project Demo
 
-    3. OpenAI , Google API, & Langchain Setup
+    03. OpenAI , Google API, & Langchain Setup
 
-    4. GitHub Repository Setup
+    04. GitHub Repository Setup
 
-    5. Project Template Creation
+    05. Project Template Creation
 
-    6. Requirements Installation & Project Setup
+    06. Requirements Installation & Project Setup
 
-    7. Logging, Exception & Utils Modules
+    07. Logging, Exception & Utils Modules
 
     8. Project Workflows
 
