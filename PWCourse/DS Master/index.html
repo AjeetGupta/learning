@@ -1,0 +1,2502 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/PWCourse/DS%20Master/">
+      
+      
+        <link rel="prev" href="../../IneuranCourse/MLOps/">
+      
+      
+        <link rel="next" href="../DS%20Pro/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>DS Master - Data Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#list-of-topics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Data Science" class="md-header__button md-logo" aria-label="Data Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Data Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DS Master
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Data Science
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../IneuranCourse/Genrative%20AI/" class="md-tabs__link">
+          
+  
+  IneuranCourse
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  PWCourse
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Data Science" class="md-nav__button md-logo" aria-label="Data Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Data Science
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    IneuranCourse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            IneuranCourse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IneuranCourse/Genrative%20AI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genrative AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IneuranCourse/MLOps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MLOps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PWCourse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            PWCourse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DS Master
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DS Master
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-flask" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Flask
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. PANDAS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. NUMPY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. VISUALIZATION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-introduction-to-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Introduction to Machine learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-feature-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Feature Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-exploratory-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Exploratory Data Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-machine-learning-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Machine Learning Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Deep learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-computer-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Computer vision
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-natural-language-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Natural language processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-big-data-hadoop" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Big Data-Hadoop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Apache Spark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-apache-kafka" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Apache Kafka
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-tableau" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Tableau
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-powerbi" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. PowerBI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-resume-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Resume Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-real-time-data-science-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Real Time Data Science Projects
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DS%20Pro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DS Pro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div class="highlight"><pre><span></span><code>                             Data Science Master
+</code></pre></div>
+<h1 id="list-of-topics">List of Topics</h1>
+<div class="highlight"><pre><span></span><code>1. Introduction
+
+2. Python Basic
+
+3. String Objects
+
+4. List Object Basics
+
+5. Tuples, Set, Dictionaries &amp; Its Function
+
+6. Function
+
+7. Oops Concepts
+
+8. Files
+
+9. Exception Handling
+
+10. Memory Management
+
+11. Database
+
+12. Flask Basic to Advance
+
+13. Flask
+
+14. Pandas Basic to Advance
+
+15. Pandas Basic
+
+16. Pandas Advance
+
+17. Python Numpy Basics To Advance
+
+18. Python Numpy
+
+19. Visualization
+
+20. Statistics Basic
+
+21. Statistics Advance
+
+22. Introduction To Machine Learning
+
+23. Feature Engineering
+
+24. Feature Selection
+
+25. Exploratory Data Analysis
+
+26. Regression
+
+27. Logistics Regression
+
+28. Decision Tree
+
+29. Support Vector Machines
+
+30. Naïve Bayes
+
+31. Ensemble Techniques And Its Types
+
+32. Boosting
+
+33. KNN
+
+34. Dimensionality Reduction
+
+35. Clustering
+
+36. Anomaly Detection
+
+37. Time Series
+
+38. Neural Network A Simple Perception
+
+39. Tensorflow Installation Environment Setup For Deep Learning
+
+40. Tensorflow Network Building &amp; Tracking
+
+41. Pytorch Fundamentals
+
+42. Convolution Neural Networks
+
+43. Image Classification Architectures
+
+44. Object Detection Architectures RCNN Family
+
+45. Yolo V5 Custom Training
+
+46. Yolo V6 Custom Training
+
+47. Yolo V7 Custom Training
+
+48. Detecron2 Custom Training
+
+49. TFOD2 Custom Training
+
+50. Image Segmentation
+
+51. Maskrcnn Practical With Detectron2
+
+52. Face Recognition
+
+53. Face Recognition Practicals
+
+54. Object Tracking
+
+55. Practicals Object Tracking With Detection
+
+56. Object Tracking
+
+57. GANs
+
+58. NLP Introduction
+
+59. Text Processing For NLP
+
+60. Useful NLP Libraries
+
+61. NLP Networks
+
+62. Attention Based Model
+
+63. Transfer Learning In NLP
+
+64. Big Data Introduction
+
+65. Hadoop
+
+66. Spark
+
+67. Spark ML Part 1
+
+68. Apache Kafka
+
+69. Tableau
+
+70. Tableau PART-2
+
+71. Tableau PART-3
+
+72. PowerBI
+
+73. PowerBI PART-2
+
+74. PowerBI PART-3
+
+75. PowerBI PART-4
+
+76. PowerBI PART-5
+
+77. Resume Preparation For Jobs
+
+78. Interview Preparation
+
+79. Profile Building
+
+80. Apply For Jobs
+</code></pre></div>
+<h3 id="1-python">1. Python</h3>
+<div class="highlight"><pre><span></span><code>1. Introduction
+
+
+01. Course Induction
+
+02. Course Overview And Dashboard Description
+
+03. Lab Introduction
+
+04. Experience Portal Introduction
+
+05. Let&#39;s Get Started
+
+
+2. Python Basic
+
+
+01. Introduction Of Python And Comparison With Other Programming Language
+
+02. Python Objects, Number &amp; Booleans, Strings.
+
+03. Container Objects, Mutability Of Objects
+
+04. Operators - Arithmetic, Bitwise, Comparison And 
+Assignment Operators, Operator&#39;s Precedence And Associativity
+
+05. Conditions (If Else, If-Elif-Else), Loops (While, For)
+
+06. Break And Continue Statement And Range Function
+
+
+3. String Objects
+
+
+01. Basic Data Structure In Python
+
+02. String Object Basics
+
+03. String Inbuilt Methods
+
+04. Splitting And Joining Strings
+
+05. String Format Functions
+
+
+4. List Object Basics
+
+
+01. List Methods
+
+02. List As Stack And Queues
+
+03. List Comprehensions
+
+
+5. Tuples, Set, Dictionaries &amp; Its Function
+
+
+01. Tuples, Sets &amp; Dictionary Object Methods
+
+02. Dictionary Comprehensions
+
+03. Dictionary View Objects
+
+
+6. Function
+
+
+01. Functions Basics, Parameter Passing, Iterators.
+
+02. Generator Functions
+
+03. Lambda Functions
+
+04. Map, Reduce, Filter Functions.
+
+
+7. Oops Concepts
+
+
+01. Oops Basic Concepts.
+
+02. Creating Classes
+
+03. Pillars Of Oops
+
+04. Inheritance
+
+05. Polymorphism
+
+06. Encapsulation
+
+07. Abstraction
+
+08. Decorator
+
+09. Class Methods And Static Methods
+
+10. Special (Magic/Dunder) Methods
+
+11. Property Decorators - Getters, Setters, And Deletes
+
+
+8. Files
+
+
+01. Working With Files
+
+02. Reading And Writing Files
+
+03. Buffered Read And Write &amp; Other File Methods
+
+04. Logging &amp; Debugger
+
+05. Modules And Import Statements
+
+
+9. Exception Handling
+
+
+01. Exceptions Handling With Try-Except
+
+02. Custom Exception Handling
+
+03. List Of General Use Exceptions
+
+04. Best Practice Exception Handling
+
+
+10. Memory Management
+
+
+01. Multithreading
+
+02. Multiprocessing
+
+
+11. Database
+
+
+01. Mysql
+</code></pre></div>
+<h3 id="2-flask">2. Flask</h3>
+<div class="highlight"><pre><span></span><code>1. Flask Basic to Advance
+
+
+01. Create web API with Flask
+
+02. Developing an Application with flask
+
+
+2. Flask
+
+
+01. Flask Introduction
+
+02. Flask Application
+
+03. Open Link Flask
+
+04. App Routing Flask
+
+05. Url Building Flask
+
+06. Http Methods Flask
+
+07. Templates Flask
+
+08. Flask Project: Food App
+
+09. Postman
+</code></pre></div>
+<h3 id="3-pandas">3. PANDAS</h3>
+<div class="highlight"><pre><span></span><code>1. Pandas Basic to Advance
+
+
+01. Reading Data From Different File Systems
+
+02. Python Pandas – Data Frame
+
+03. Python Pandas - operations
+
+
+2. Pandas Basic
+
+
+01. Python Pandas - Basic Functionality
+
+02. Reading Data From Different File Systems
+
+3. Pandas Advance
+
+01. Python Pandas – Re Indexing Python
+
+02. Pandas – Iteration
+
+03. Python Pandas – Sorting.
+
+04. Working With Text Data Options &amp; Customization
+
+05. Indexing &amp; Selecting
+
+06. Data Statistical Functions
+
+07. Python Pandas - Window Functions
+
+08. Python Pandas - Date Functionality
+
+09. Python Pandas –Time Delta
+
+10. Python Pandas - Categorical Data
+
+11. Python Pandas – Visualization
+
+12. Python Pandas - Tools
+
+13. Python Numpy Basics To Advance
+</code></pre></div>
+<h3 id="4-numpy">4. NUMPY</h3>
+<div class="highlight"><pre><span></span><code>01. Numpy - Nd Array Object.
+
+02. Numpy - Data Types.
+
+03. Numpy - Array Attributes.
+
+04. Numpy - Array Creation Routines.
+
+05. Numpy - Array From Existing.
+
+06. Data Array From Numerical Ranges.
+
+07. Numpy - Indexing &amp; Slicing.
+
+08. Numpy – Advanced Indexing.
+
+09. Numpy – Broadcasting.
+
+10. Numpy - Iterating Over Array.
+
+11. Numpy - Array Manipulation.
+
+12. Numpy - Binary Operators.
+
+13. Numpy - String Functions.
+
+14. Numpy - Mathematical Functions.
+
+15. Numpy - Arithmetic Operations.
+
+16. Numpy - Statistical Functions.
+
+17. Sort, Search &amp; Counting Functions.
+
+18. Numpy - Byte Swapping.
+
+19. Numpy - Copies &amp;Views.
+
+20. Numpy - Matrix Library.
+
+21. Numpy - Linear Algebra
+</code></pre></div>
+<h3 id="5-visualization">5. VISUALIZATION</h3>
+<div class="highlight"><pre><span></span><code>01. Matplotlib
+
+02. Seaborn
+
+03. Plotly
+
+04. Bokeh
+</code></pre></div>
+<h3 id="6-statistics">6. Statistics</h3>
+<div class="highlight"><pre><span></span><code>1. Statistics Basic
+
+
+01. Introduction To Basic Statistics Terms
+
+02. Types Of Statistics
+
+03. Types Of Data
+
+04. Levels Of Measurement
+
+05. Measures Of Central Tendency
+
+06. Measures Of Dispersion
+
+07. Random Variables
+
+08. Set
+
+09. Skewness
+
+10. Covariance And Correlation
+
+
+2. Statistics Advance
+
+
+01. Probability Density/Distribution Function
+
+02. Types Of The Probability Distribution
+
+03. Binomial Distribution
+
+04. Poisson Distribution
+
+05. Normal Distribution (Gaussian Distribution)
+
+06. Probability Density Function And Mass Function
+
+07. Cumulative Density Function
+
+08. Examples Of Normal Distribution
+
+09. Bernoulli Distribution
+
+10. Uniform Distribution
+
+11. Z Stats
+
+12. Central Limit Theorem
+
+13. Estimation
+
+14. A Hypothesis
+
+15. Hypothesis Testing’S Mechanism
+
+16. P-Value
+
+17. T-Stats
+
+18. Student T Distribution
+
+19. T-Stats Vs. Z-Stats: Overview
+
+20. When To Use A T-Tests Vs. Z-Tests
+
+21. Type 1 &amp; Type 2 Error
+
+22. Bayes Statistics (Bayes Theorem)
+
+23. Confidence Interval(Ci)
+
+24. Confidence Intervals And The Margin Of Error
+
+25. Interpreting Confidence Levels And Confidence Intervals
+
+26. Chi-Square Test
+
+27. Chi-Square Distribution Using Python
+
+28. Chi-Square For Goodness Of Fit Test
+
+29. When To Use Which Statistical Distribution?
+
+30. Analysis Of Variance (Anova)
+
+31. Assumptions To Use Anova
+
+32. Anova Three Type
+
+33. Partitioning Of Variance In The Anova
+
+34. Calculating Using Python
+
+35. F-Distribution
+
+36. F-Test (Variance Ratio Test)
+
+37. Determining The Values Of F
+
+38. F Distribution Using Python
+</code></pre></div>
+<h3 id="7-introduction-to-machine-learning">7. Introduction to Machine learning</h3>
+<div class="highlight"><pre><span></span><code>1. Introduction To Machine Learning
+
+
+01. Ai Vs Ml Vs Dl Vs Ds
+
+02. Supervised, Unsupervised, Semi-Supervised, Reinforcement Learning
+
+03. Train, Test, Validation Split
+
+04. Performance
+
+05. Overfitting, Under Fitting
+
+06. Bias Vs Variance
+</code></pre></div>
+<h3 id="8-feature-engineering">8. Feature Engineering</h3>
+<div class="highlight"><pre><span></span><code>1. Feature Engineering
+
+01. Handling Missing Data
+
+02. Handling Imbalanced Data
+
+03. Up-Sampling
+
+04. Down-Sampling
+
+05. Smote
+
+06. Data Interpolation
+
+07. Handling Outliers
+
+08. Filter Method
+
+09. Wrapper Method
+
+10. Embedded Methods
+
+11. Min-Max Scaling
+
+12. Unit Vector
+
+13. Feature Extraction
+
+14. Pca (Principle Component Analysis)
+
+15. Data Encoding
+
+16. Nominal Encoding
+
+17. One Hot Encoding
+
+18. Ordinal Encoding
+
+19. Label Encoding
+
+20. Target Guided Ordinal Encoding
+
+21. Covariance
+
+22. Correlation Check
+
+23. Pearson Correlation Coefficient
+
+24. Spearman’S Rank Correlation
+
+25. Vif
+
+
+2. Feature Selection
+
+
+01. Feature Selection
+
+02. Recursive Feature Elimination
+
+03. Backward Elimination
+
+04. Forward Elimination
+</code></pre></div>
+<h3 id="9-exploratory-data-analysis">9. Exploratory Data Analysis</h3>
+<ol>
+<li>
+<p>Exploratory Data Analysis </p>
+</li>
+<li>
+<p>Feature Engineering And Selection.</p>
+</li>
+<li>Analyzing Movie Reviews Sentiment.</li>
+<li>Analyzing Movie Reviews Sentiment.</li>
+<li>Customer Segmentation And Effective Cross Selling.</li>
+<li>Analyzing Wine Types And Quality.</li>
+<li>Analyzing Music Trends And Recommendations.</li>
+<li>Forecasting Stock And Commodity Prices</li>
+</ol>
+<h3 id="10-machine-learning-algorithm">10. Machine Learning Algorithm</h3>
+<div class="highlight"><pre><span></span><code>1. Regression
+
+
+01. Linear Regression
+
+02. Gradient Descent
+
+03. Multiple Linear Regression
+
+04. Polynomial Regression
+
+05. R Square And Adjusted R Square
+
+06. Rmse, Mse, Mae Comparison
+
+07. Regularized Linear Models
+
+08. Ridge Regression
+
+09. Lasso Regression
+
+10. Elastic Net
+
+11. Complete End-To-End Project With Deployment On Cloud And Ui
+
+
+2.Logistics Regression
+
+
+01. Logistics Regression In-Depth Intuition
+
+02. In-Depth Mathematical Intuition
+
+03. In-Depth Geometrical Intuition
+
+04. Hyper Parameter Tuning
+
+05. Grid Search Cv
+
+06. Randomize Search Cv
+
+07. Data Leakage
+
+08. Confusion Matrix
+
+09. Precision, Recall, F1 Score, Roc, Auc
+
+10. Best Metric Selection
+
+11. Multiclass Classification In Lr
+
+12. Complete End-To-End Project With Deployment In Multi-Cloud Platform
+
+
+3. Decision Tree - 04 April 2023
+
+
+01. Decision Tree Classifier
+
+02. In-Depth Mathematical Intuition
+
+03. In-Depth Geometrical Intuition
+
+04. Confusion Matrix
+
+05. Precision, Recall, F1 Score, Roc, Auc
+
+06. Best Metric Selection
+
+07. Decision Tree Repressor
+
+08. In-Depth Mathematical Intuition
+
+09. In-Depth Geometrical Intuition
+
+10. Performance Metrics
+
+11. Complete End-To-End Project With Deployment In Multi Cloud Platform
+
+
+4. Support Vector Machines
+
+
+01. Linear Svm Classification
+
+02. In-Depth Mathematical Intuition
+
+03. In-Depth Geometrical Intuition
+
+04. Soft Margin Classification
+
+05. Nonlinear Svm Classification
+
+06. Polynomial Kernel
+
+07. Gaussian, Rbf Kernel
+
+08. Data Leakage
+
+09. Confusion Matrix
+
+10. Precision, Recall, F1 Score , Roc, Auc
+
+11. Best Metric Selection
+
+12. Svm Regression
+
+13. In-Depth Mathematical Intuition
+
+14. In-Depth Geometrical Intuition
+
+15. Complete End-To-End Project With Deployment
+
+
+5. Naïve Bayes
+
+
+01. Bayes Theorem
+
+02. Multinomial Naïve Bayes
+
+03. Gaussian Naïve Bayes
+
+04. Various Type Of Bayes Theorem And Its Intuition
+
+05. Confusion Matrix
+
+06. Precision, Recall, F1 Score, Roc, Auc
+
+07. Best Metric Selection
+
+08. Complete End-To-End Project With Deployment
+
+
+6.Ensemble Techniques And Its Types
+
+
+01. Definition Of Ensemble Techniques
+
+02. Bagging Technique
+
+03. Bootstrap Aggregation
+
+04. Random Forest (Bagging Technique)
+
+05. Random Forest Regressor
+
+06. Random Forest Classifier
+
+07. Complete End-To-End Project With Deployment
+
+
+7. Boosting
+
+
+01. Boosting Technique
+
+02. Ada Boost
+
+03. Gradient Boost
+
+04. Xgboost
+
+05. Complete End-To-End Project With Deployment
+
+
+8. KNN
+
+
+01. Knn Classifier and Regressor
+
+02. Knn Repressor
+
+03. Variants Of Knn
+
+04. Brute Force Knn
+
+05. K-Dimension Tree
+
+06. Ball Tree
+
+07. Complete End-To-End Project With Deployment
+
+
+9. Dimensionality Reduction
+
+
+01. The Curse Of Dimensionality
+
+02. Dimensionality Reduction Technique
+
+03. PCA (Principle Component Analysis)
+
+04. Mathematics Behind PCA
+
+05. Scree Plots
+
+06. Eigen-Decomposition Approach
+
+07. Practicals
+
+
+10. Clustering
+
+
+01. Clustering And Their Types
+
+02. K-Means Clustering
+
+03. K-Means++
+
+04. Batch K-Means
+
+05. Hierarchical Clustering
+
+06. Dbscan
+
+07. Evaluation Of Clustering
+
+08. Homogeneity, Completeness, And V-Measure
+
+09. Silhouette Coefficient
+
+10. Davies-Bouldin Index
+
+11. Contingency Matrix
+
+12. Pair Confusion Matrix
+
+13. Extrinsic Measure
+
+14. Intrinsic Measure
+
+15. Complete End-To-End Project With Deployment
+
+
+11. Anomaly Detection
+
+
+01. Anomaly Detection Types
+
+02. Anomaly Detection Applications
+
+03. Isolation Forest Anomaly Detection Algorithm
+
+04. Density-Based Anomaly Detection (Local Outlier Factor) Algorithm
+
+05. Support Vector Machine Anomaly Detection Algorithm
+
+06. Dbscan Algorithm For Anomaly Detection
+
+07. Complete End-To-End Project With Deployment
+
+
+12. Time Series
+
+
+01. What Is A Time Series?
+
+02. Old Techniques
+
+03. Arima
+
+04. Acf And Pacf
+
+05. Time-Dependent Seasonal Components.
+
+06. Autoregressive (Ar)
+
+07. Moving Average (Ma) And Mixed Arma- Modeler.
+</code></pre></div>
+<h3 id="11-deep-learning">11. Deep learning</h3>
+<div class="highlight"><pre><span></span><code>1. Neural Network A Simple Perception
+
+
+01. Neural Network Overview And Its Use Case.
+
+02. Detail Mathematical Explanation
+
+03. Various Neural Network Architect Overview.
+
+04. Use Case Of Neural Network In Nlp And Computer Vision.
+
+05. Activation Function -All Name
+
+06. Multilayer Network
+
+07. Loss Functions
+
+08. The Learning Mechanism
+
+09. Optimizers
+
+10. Forward And Backward Propagation.
+
+11. Weight Initialization Technique
+
+12. Weight Initialization Technique
+
+13. Vanishing Gradient Problem
+
+14. Exploding Gradient Problem
+
+15. Visualization Of Neural Network
+
+
+2. Tensorflow Installation Environment Setup For Deep Learning
+
+
+01. TensorFlow Installation 2.0 .
+
+02. TensorFlow 2.0 Function.
+
+03. TensorFlow 2.0 Function
+
+04. TensorFlow 2.0 Neural Network Creation.
+
+
+3. Tensorflow Network Building &amp; Tracking - 27 May 2023
+
+
+01. Tensor space
+
+02. Tensor board Integration
+
+03. TensorFlow Playground
+
+04. Netron
+</code></pre></div>
+<h3 id="12-computer-vision">12. Computer vision</h3>
+<div class="highlight"><pre><span></span><code>1. Pytorch Fundamentals
+
+
+01. Pytorch Installation.
+
+02. Pytorch Functional Overview.
+
+03. Pytorch Neural Network Creation.
+
+
+2. Convolution Neural Networks
+
+
+01. Cnn Fundamentals
+
+02. Cnn Explained In Detail - Cnnexplainer, Tensor space
+
+03. Various Cnn Based Architecture
+
+04. Training Cnn From Scratch
+
+05. Building Webapps For Cnn
+
+06. Deployment In Aws, Azure &amp; Google Cloud
+
+
+3. Image Classification Architectures
+
+
+01. Lenet-5 Variants With Research Paper And Practical
+
+02. Alexnet Variants With Research Paper And Practical
+
+03. Googlenet Variants With Research Paper And Practical
+
+04. Transfer Learning
+
+05. Vggnet Variants With Research Paper And Practical
+
+06. Resnet Variants With Research Paper And Practical
+
+07. Inception Net Variants With Research Paper And Practical
+
+
+4. Object Detection Architectures RCNN Family
+
+
+01. FASTER RCNN
+
+02. YOLO
+
+
+5. Yolo V5 Custom Training
+
+
+01. Introduction To Yolov5
+
+02. Installation Of Yolov5
+
+03. Data Annotation &amp; Preparation
+
+04. Download Data &amp; Configure Path
+
+05. Download &amp; Configure Pretrained Weight
+
+06. Start Model Training
+
+07. Evaluation Curves Yolov5
+
+08. Inferencing Using Trained Model
+
+
+
+6. Yolo V6 Custom Training
+
+
+01. Introduction To Yolov6
+
+02. Installation Of Yolov6
+
+03. Data Annotation &amp; Preparation
+
+04. Download Data &amp; Configure Path
+
+05. Download &amp; Configure Pretrained Weight
+
+06. Start Model Training
+
+07. Evaluation Curves Yolov6
+
+08. Inferencing Using Trained Model
+
+
+7. Yolo V7 Custom Training
+
+
+01. Introduction To Yolov7
+
+02. Installation Of Yolov7
+
+03. Data Annotation &amp; Preparation
+
+04. Download Data &amp; Configure Path
+
+05. Download &amp; Configure Pretrained Weight
+
+06. Start Model Training
+
+07. Evaluation Curves Yolov7
+
+08. Inferencing Using Trained Model
+
+
+8. Detecron2 Custom Training
+
+
+01. Introduction To Detecron2
+
+02. Installation Of Detecron2
+
+03. Data Annotation &amp; Preparatio
+
+04. Download Data &amp; Configure Path
+
+05. vDownload &amp; Configure Pretrained Weight
+
+06. Start Model Training
+
+07. Evaluation Curves Detecron2
+
+08. Inferencing Using Trained Model
+
+
+9. TFOD2 Custom Training
+
+
+01. Introduction To TFOD2
+
+02. Installation Of TFOD2
+
+03. Data Annotation &amp; Preparation
+
+04. Download Data &amp; Configure Path
+
+05. Download &amp; Configure Pretrained Weight
+
+06. Start Model Training
+
+07. Evaluation Curves TFOD2
+
+08. Inferencing Using Trained Model
+
+
+10. Image Segmentation
+
+
+01. Scene Understanding
+
+02. More To Detection
+
+03. Need Accurate Results
+
+04. Segmentation
+
+05. Types Of Segmentation
+
+06. Understanding Masks
+
+07. Maskrcnn
+
+08. From Bounding Box To Polygon Masks
+
+09. Mask Rcnn Architecture
+
+
+11. Maskrcnn Practical With Detectron2
+
+
+01. Introduction To Detectron2
+
+02. Our Custom Dataset
+
+03. Doing Annotations Or Labeling Data
+
+04. Registering Dataset For Training
+
+
+12. Face Recognition
+
+
+01. vWhat Is Face Recognition?
+
+02. Evolution Of Face Recognition
+
+03. Face Recognition Pipeline
+
+04. Data Preprocessing
+
+05. Face Detection
+
+06. Face Alignment
+
+07. Face Identification
+
+08. Exploring Face net
+
+09. Exploring Mtcnn
+
+10. Exploring Arc face
+
+11. Data Preprocessing
+
+12. Face Detection
+
+13. Face Alignment
+
+14. Face Identification
+
+15. Combining All Pipelines
+
+16. Building A Desktop App With Tkinter
+
+
+13. Object Tracking
+
+
+01. What Is Object Tracking?
+
+02. Localization
+
+03. Motion
+
+04. Flow Of Optics
+
+05. Motion Vector
+
+06. Tracking Features
+
+07. Exploring Deep Sort
+
+08. Bytetrack
+
+
+14. Practicals Object Tracking With Detection
+
+
+01. Data Preprocessing
+
+02. Using Yolo For Detection
+
+03. Preparing Deep sort With Yolo
+
+04. Combining Pipelines For Tracking &amp; Detection
+
+
+15. Object Tracking
+
+01. Tracking Features
+
+
+16. GANs
+
+
+01. Introduction To Gans
+
+02. Gan Architecture
+
+03. Discriminator
+
+04. Generator
+
+05. Wgans
+
+06. Dcgans
+
+07. Stylegans
+
+08. Gan Practical&#39;s Implementation
+</code></pre></div>
+<h3 id="13-natural-language-processing">13. Natural language processing</h3>
+<div class="highlight"><pre><span></span><code>1. NLP Introduction
+
+
+01. Overview Computational Linguistics.
+
+02. History Of Nlp.
+
+03. Why Nlp
+
+04. Use Of Nlp
+
+
+2. Text Processing For NLP
+
+
+01. Text Processing
+
+02. Understanding Regex
+
+03. String Tokenization
+
+04. Annotator Creation
+
+05. Sentence Processing
+
+06. Lemmatization In Text Processing
+
+07. Word Embedding
+
+08. Co-Occurrence Vectors
+
+09. Word2Vec
+
+10. Doc2Vec
+
+
+3. Useful NLP Libraries
+
+
+01. Nltk
+
+02. Text Blob
+
+03. Stanford Nlp
+
+
+4. NLP Networks
+
+
+01. Recurrent Neural Networks.
+
+02. Long Short Term Memory (Lstm)
+
+03. Bi Lstm
+
+04. Stacked Lstm
+
+05. Gru Implementation
+
+
+5. Attention Based Model
+
+
+01. Seq 2 Seq.
+
+02. Encoders And Decoders.
+
+03. Attention Mechanism.
+
+04. Attention Neural Networks
+
+05. Self-Attention
+
+
+6. Transfer Learning In NLP
+
+
+01. Introduction To Transformers.
+
+02. Bert Model.
+
+03. Gpt2 Model.
+</code></pre></div>
+<h3 id="14-big-data-hadoop">14. Big Data-Hadoop</h3>
+<div class="highlight"><pre><span></span><code>1. Big Data Introduction - 16 August 2023
+
+
+01. What Is Big Data?
+
+02. Big Data Application
+
+03. Big Data Pipeline
+
+
+2. Hadoop - 17 August 2023
+
+
+01. Hadoop Introduction
+
+02. Hadoop Architecture
+
+03. Hadoop Setup And Installation
+</code></pre></div>
+<h3 id="15-apache-spark">15. Apache Spark</h3>
+<div class="highlight"><pre><span></span><code>1. Spark
+
+
+01. Spark
+
+02. Spark Overview
+
+03. Spark Installation
+
+04. Spark RDD
+
+05. Spark Data Frame
+
+06. Spark Architecture
+
+07. Spark Ml Lib
+
+08. Spark Nlp
+
+
+2. Spark ML Part 1
+
+
+01. Spark Linear Regression
+
+02. Spark Logistic Regression
+
+03. Spark Decision Tree
+
+04. Spark Naive Bayes
+</code></pre></div>
+<h3 id="16-apache-kafka">16. Apache Kafka</h3>
+<div class="highlight"><pre><span></span><code>1. Apache Kafka
+
+
+01. Kafka Introduction
+
+02. Kafka Installation
+
+03. Spark Streaming
+
+04. Spark With Kafka
+</code></pre></div>
+<h3 id="17-tableau">17. Tableau</h3>
+<div class="highlight"><pre><span></span><code>1. Tableau
+
+
+01. Talking About Business Intelligence
+
+02. Tools And Methodologies Used In Bi
+
+03. Why Visualization Is Getting More Popular
+
+04. Why Tableau?
+
+05. Gartner Magic Quadrant Of Market Leaders
+
+06. Future Business Impact Of Bi
+
+07. Tableau Products
+
+08. Tableau Architecture
+
+09. Bi Project Execution
+
+10. Tableau Installation In Local System
+
+11. Introduction To Tableau Prep
+
+12. Tableau Prep Builder User Interface
+
+13. Data Preparation Techniques Using Tableau Prep Builder Tool
+
+14. How To Connect Tableau With Different Data Source
+
+15. Visual Segments
+
+16. Visual Analytics In Depth
+
+17. Filters, Parameters &amp; Sets
+
+18. Tableau Calculations Using Functions
+
+19. Tableau Joins
+
+20. Working With Multiple Data Source (Data Blending)
+
+21. Building Predictive Models
+
+22. Dynamic Dashboards And Stories
+
+23. Sharing Your Reports
+
+24. Tableau Server
+
+25. User Security
+
+26. Scheduling
+</code></pre></div>
+<h3 id="18-powerbi">18. PowerBI</h3>
+<div class="highlight"><pre><span></span><code>1. PowerBI
+
+
+01. Power Bi Introduction And Overview
+
+02. Key Benefits Of Power Bi
+
+03. Power Bi Architecture
+
+04. Power Bi Process
+
+05. Components Of Power Bi
+
+06. Power Bi - Building Blocks
+
+07. Power Bi Vs Other Bi Tools
+
+08. Power Installation
+
+09. Overview Of Power Bi Desktop
+
+10. Data Sources In Power Bi Desktop
+
+11. Connecting To A Data Sources
+
+12. Query Editor In Power Bi
+
+13. Views In Power Bi
+
+14. Field Pane
+
+15. Visual Pane
+
+16. Custom Visual Option
+
+17. Filters
+
+18. Introduction To Using Excel Data In Power Bi
+
+19. Exploring Live Connections To Data With Power Bi
+
+20. Connecting Directly To Sql Azure, Hd Spark, Sql Server 
+Analysis Services/ My Sql
+
+21. Import Power View And Power Pivot To Power Bi
+
+22. Power Bi Publisher For Excel
+
+23. Content Packs
+
+24. Introducing Power Bi Mobile
+
+25. Power Query Introduction
+
+26. Query Editor Interface
+
+27. Clean And Transform Your Data With Query Editor
+
+28. Data Type
+
+29. Column Transformations Vs Adding Columns
+
+30. Text Transformations
+
+31. Cleaning Irregularly Formatted Data -Transpose
+
+32. Date And Time Calculations
+
+33. Advance Editor: Use Case
+
+34. Query Level Parameters
+
+35. Combining Data – Merging And Appending
+
+36. Data Modelling
+
+37. Calculated Columns
+
+38. Measures/New Quick Measures
+
+39. Calculated Tables
+
+40. Optimizing Data Models
+
+41. Row Context Vs Set Context
+
+42. Cross Filter Direction
+
+43. Manage Data Relationship
+
+44. Why Is Dax Important?
+
+45. Advanced Calculations Using Calculate Functions
+
+46. Dax Queries
+</code></pre></div>
+<h3 id="19-resume-preparation">19. Resume Preparation</h3>
+<div class="highlight"><pre><span></span><code>1. Resume Preparation For Jobs
+
+
+01. Resume Templates For Freshers
+
+02. Resume Templates For 2-4 Years Experience
+
+03. Resume Templates For 5-8 Years Experience
+
+04. Resume Templates For 10+ Years Experience
+
+
+2. Interview Preparation
+
+
+01. Interview Preparation For Python
+
+02. Interview Preparation For Statistics
+
+03. Interview Preparation For Machine Learning
+
+04. Interview Preparation For Computer Vision
+
+05. Interview Preparation For Nlp
+
+
+3. Profile Building
+
+
+01. GitHub
+
+02. LinkedIn
+
+
+4. Apply For Jobs
+
+
+01. Naukri
+
+02. Monster
+</code></pre></div>
+<h3 id="14-real-time-data-science-projects">14. Real Time Data Science Projects</h3>
+<div class="highlight"><pre><span></span><code>1. Project 01 - Python Project :- Web Scrapping
+
+
+01. Web Scrapping introduction
+
+02. Integration With Web Portal.
+
+03. Integration With Rest Api, Web Portal And Mongo Db
+
+04. Deployment On Web Portal On Aws , Azure , Aws4
+
+
+2. Project 02 - Image Scrapper
+
+
+01. Image Scrapping Introduction
+
+02. Image Scrapping Deployment
+
+03. Integration With Rest Api, Web Portal And Mongo Db
+
+04. Deployment On Web Portal On Aws , Azure
+
+
+3. Project 03 - ML Projects
+
+
+01. Fault detection in wafers based on sensor data. - 06 May 2023
+
+02. Cement strength reg. - 07 May 2023
+
+03. Credit card fraud. - 08 May 2023
+
+04. Fraud detection - 09 May 2023
+
+05. Income prediction - 10 May 2023
+
+06. Phishing classifier - 11 May 2023
+
+07. Visibility climate - 12 May 2023
+
+
+4. Project 04 - Computer Vision Projects
+
+
+01. Object Tracking Project
+
+02. Image Classification with SOTA CNNs
+
+03. Image to Text using OCRs
+
+04. Vision based Attendance System
+
+05. Sign Language Detection
+
+06. Shredder Systems
+
+
+5. Project 05 - NLP Projects
+
+
+01. Movie Review using BERT
+
+02. NER using BERT
+
+03. POS Tagging with BERT
+
+04. Text Generation GPT2
+
+05. Question Answering with SQUAD
+
+06. Machine Translation with Transformers
+
+07. Paraphrasing with BART
+
+08. Text2Speech
+
+09. Speech2Text
+
+10. SpellCorrector
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">Learning Doc</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/james-willett" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/TheJamesWillett" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/willettjames/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>
