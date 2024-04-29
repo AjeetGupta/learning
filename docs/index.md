@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Data Science
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[1. Data Scinece Master](PWCourse/DS%20Master.md)
 
-## Commands
+[2. Data Scinece Pro](PWCourse/DS%20Pro.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+[3. Generative AI](IneuranCourse/Genrative%20AI.md)
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[4. ML Ops](IneuranCourse/MLOps.md)
